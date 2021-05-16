@@ -2,6 +2,13 @@
 
 The idea of this demo is to custom the navigation bar large title in SwiftUI.
 
+## Example
+
+- A navigation bar view should have 2 parts: the large title view and the trailing view. Make sure these 2 parts customizable.
+- The navigation bar view should have the default behavior of the system's navigation bar with large title when user scrolls the list up and down.
+
+<img src="./image/swiftui-navigation-bar-6.gif" width="300"> 
+
 ## About view hierachy of the navigation bar
 
 - Create new project
@@ -197,4 +204,4 @@ struct ContentView: View {
 
 Finally we have a navigation bar with large title of which the title component and the trailing component are customizable.
 
-<img src="./image/swiftui-navigation-bar-6.gif" width="500"> 
+<img src="./image/swiftui-navigation-bar-6.gif" width="300"> 
