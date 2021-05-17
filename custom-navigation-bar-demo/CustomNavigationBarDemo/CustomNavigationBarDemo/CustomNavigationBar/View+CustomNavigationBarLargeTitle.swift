@@ -9,18 +9,18 @@ import SwiftUI
 
 public extension View {
 
-    func navigationBarLargeTiltle<T>(customView: T) -> some View where T: View {
+    func navigationBarLargeTiltle<Content>(customView: Content) -> some View where Content: View {
         overlay(NavigationBarLargeTiltleRepresenting(customView: customView).frame(width: 0, height: 0))
     }
 }
 
-private struct NavigationBarLargeTiltleRepresenting<T: View>: UIViewControllerRepresentable {
+private struct NavigationBarLargeTiltleRepresenting<Content: View>: UIViewControllerRepresentable {
 
     typealias UIViewControllerType = Wrapper
 
-    private let customView: T
+    private let customView: Content
 
-    init(customView: T) {
+    init(customView: Content) {
         self.customView = customView
     }
 
