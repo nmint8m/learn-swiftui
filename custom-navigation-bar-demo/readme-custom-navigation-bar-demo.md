@@ -127,7 +127,7 @@ extension NavigationBarLargeTiltleRepresenting {
 ```swift
 /// View+CustomNavigationBarLargeTitle.swift
 
-public extension View {
+extension View {
 
     func navigationBarLargeTiltle<T>(customView: T) -> some View where T: View {
         overlay(NavigationBarLargeTiltleRepresenting(customView: customView).frame(width: 0, height: 0))
